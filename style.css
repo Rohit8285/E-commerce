@@ -81,10 +81,10 @@ a,a:hover{
     position: relative;
 }
 .home .home-banner-1{
-    background-image: url("/projects/2nd-e-comerce-website/img/images/slide1.jpg");
+    background-image: url("img/images/slide1.jpg");
 }
 .home .home-banner-2{
-    background-image: url("/projects/2nd-e-comerce-website/img/images/slide2.jpg");
+    background-image: url("img/images/slide2.jpg");
 }
 .home .home-banner .home-banner-text{
     position: absolute;
