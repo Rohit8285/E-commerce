@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit-no">
+    <title>E-commerce website using bootstrap-5</title>
+    <!-- -------------favicon link------------- -->
+    <link rel="shortcut icon" href="/projects/2nd-e-comerce-website/img/android-chrome-192x192.png" type="image/png">
+
+    <!----------- bootstrap css cdn link -------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js">
+
+    <!----------- fontawesome cdn link ------------>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!--------- own css link ----------->
+    <link rel="stylesheet" href="/projects/2nd-e-comerce-website/style.css">
+
+    <link rel="stylesheet" href="/projects/2nd-e-comerce-website/responsive.css">
+
+     <!-- animation on scroll cdn link -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <!------------------navigation section ---------------->
+    <section id="header" >
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="/projects/2nd-e-comerce-website/img/images/logo.png" class="img-fluid">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="bi bi-list navbar-toggler-icon"></span>
+                <!-- <span class="navbar-toggler-icon"></span> -->
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#product">product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#special">special</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#testimonial">testimonials</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+    <!---------------home section---------------------- -->
+    <section id="home" class="home pt-5 overflow-hidden" data-aos="flip-up" data-aos-duration="3000">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="home-banner home-banner-1">
+                    <div class="home-banner-text">
+                        <h1>women</h1>
+                        <h2>52% discount for this season</h2>
+                        <a href=""class="btn btn-danger text-uppercase mt-4">our product</a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="home-banner home-banner-2">
+                    <div class="home-banner-text">
+                        <h1>e-shop</h1>
+                        <h2>with working card and pay pal</h2>
+                        <a href=""class="btn btn-danger text-uppercase mt-4">our product</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true">
+                <span class="bi bi-arrow-left text-danger fs-2 w-50"></span>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true">
+                <span class="bi bi-arrow-right text-danger fs-2 w-50"></span>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+     <!-- ----offer section---- -->
+     <div class="offers">
+      <div class="container">
+        <div class="row">
+          <!-- ---offer box one -->
+          <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
+            <a href="#">
+              <div class="offer-box text-center position-relative">
+                <div class="offer-inner">
+                  <div class="offer-image position-relative overflow-hidden">
+                    <img src="/projects/2nd-e-comerce-website/img/images/offer1.jpg" alt="offer-1" class="img-fluid">
+                    <div class="offer-overlay"></div>
+                  </div>
+                  <div class="offer-info">
+                    <div class="offer-info-inner">
+                      <p class="heading-bigger text-capitalize">sale 30%</p>
+                      <p class="offer-title-1 text-uppercase font-weight-bold">don't miss the chance</p>
+                      <button type="button" class="btn btn-outline-danger text-uppercase mt-4">shop now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- --offer box two -->
+          <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4 d-flex flex-column justify-content-between">
+            <a href="#">
+              <div class="offer-box text-center position-relative mb-4 mb-sm-0 mb-lg-0">
+                <div class="offer-inner">
+                  <div class="offer-image position-relative overflow-hidden">
+                    <img src="/projects/2nd-e-comerce-website/img/images/offer2.jpg" alt="offer-1" class="img-fluid">
+                    <div class="offer-overlay"></div>
+                  </div>
+                  <div class="offer-info">
+                    <div class="offer-info-inner">
+                      <p class="heading-bigger text-capitalize">sale 70%</p>
+                      <p class="offer-title-1 text-uppercase font-weight-bold">don't miss the chance</p>
+                      <button type="button" class="btn btn-outline-danger text-uppercase mt-4">shop now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="offer-box text-center position-relative">
+                <div class="offer-inner">
+                  <div class="offer-image position-relative overflow-hidden">
+                    <img src="/projects/2nd-e-comerce-website/img/images/offer3.jpg" alt="offer-1" class="img-fluid">
+                    <div class="offer-overlay"></div>
+                  </div>
+                  <div class="offer-info">
+                    <div class="offer-info-inner">
+                      <p class="heading-bigger text-capitalize">sale 50%</p>
+                      <p class="offer-title-1 text-uppercase font-weight-bold">don't miss the chance</p>
+                      <button type="button" class="btn btn-outline-danger text-uppercase mt-4">shop now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- --offer box-three -->
+          <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
+            <a href="#">
+              <div class="offer-box text-center position-relative">
+                <div class="offer-inner">
+                  <div class="offer-image position-relative overflow-hidden">
+                    <img src="/projects/2nd-e-comerce-website/img/images/offer4.jpg" alt="offer-1" class="img-fluid">
+                    <div class="offer-overlay"></div>
+                  </div>
+                  <div class="offer-info">
+                    <div class="offer-info-inner">
+                      <p class="heading-bigger text-capitalize">sale 25%</p>
+                      <p class="offer-title-1 text-uppercase font-weight-bold">don't miss the chance</p>
+                      <button type="button" class="btn btn-outline-danger text-uppercase mt-4">shop now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+     </div>
+        </section>
+
+    <!-- ------------------product section ------------------>
+    <section id="product" class="products" data-aos="flip-left" data-aos-duration="2000">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="headline text-center mb-5">
+              <h2 class="pb-3 position-relative text-uppercase d-inline-block">feature product</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-lg-4">
+            <a href="#" class="d-block text-center mb-4">
+              <div class="product-list">
+                <div class="product-image position-relative">
+                  <span class="sale">sale</span>
+                  <img src="/projects/2nd-e-comerce-website/img/images/p1.jpg" alt="product" class="img-fluid product-image-first">
+                  <img src="/projects/2nd-e-comerce-website/img/images/p3.jpg" alt="product" class="img-fluid product-image-secondary">
+                </div>
+                <div class="product-name pt-3">
+                  <h3 class="text-capitalize">
+                    winter long sleeve black white
+                  </h3>
+                  <p class="mb-0 amount">$400.00<del>$580.00</del></p>
+                    <div class="py-1">
+                      <span class="bi bi-star-fill text-danger"></span>
+                      <span class="bi bi-star-fill text-danger"></span>
+                      <span class="bi bi-star-fill text-danger"></span>
+                      <span class="bi bi-star-half text-danger"></span>
+                      <span class="bi bi-star text-danger"></span>
+                    </div>
+                  
+                  <button type="button" class="add_to_cart text-uppercase">add to cart</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <a href="#" class="d-block text-center mb-4">
+              <div class="product-list">
+                <div class="product-image position-relative">
+                  <span class="sale">sale</span>
+                  <img src="/projects/2nd-e-comerce-website/img/images/p2.jpg" alt="product" class="img-fluid product-image-first">
+                  <img src="/projects/2nd-e-comerce-website/img/images/p4.jpg" alt="product" class="img-fluid product-image-secondary">
+                </div>
+                <div class="product-name pt-3">
+                  <h3 class="text-capitalize">
+                    women toters lady handbag
+                  </h3>
+                  <p class="mb-0 amount">$300.00</p>
+                  <div class="py-1">
+                    <span class="bi bi-star-fill text-danger"></span>
+                    <span class="bi bi-star-fill text-danger"></span>
+                    <span class="bi bi-star-fill text-danger"></span>
+                    <span class="bi bi-star-half text-danger"></span>
+                    <span class="bi bi-star text-danger"></span>
+                  </div>
+                  <button type="button" class="add_to_cart text-uppercase">add to cart</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <a href="#" class="d-block text-center mb-4">
+              <div class="product-list">
+                <div class="product-image position-relative">
+                  <span class="sale">sale</span>
+                  <img src="/projects/2nd-e-comerce-website/img/images/p5.jpg" alt="product" class="img-fluid product-image-first">
+                  <img src="/projects/2nd-e-comerce-website/img/images/p7.jpg" alt="product" class="img-fluid product-image-secondary">
+                </div>
+                <div class="product-name pt-3">
+                  <h3 class="text-capitalize">
+                    lace water soluble sexy dress
+                  </h3>
+                  <p class="mb-0 amount">$600.00</p>
+                  <div class="py-1">
+                    <span class="bi bi-star-fill text-danger"></span>
+                    <span class="bi bi-star-fill text-danger"></span>
+                    <span class="bi bi-star-fill text-danger"></span>
+                    <span class="bi bi-star-half text-danger"></span>
+                    <span class="bi bi-star text-danger"></span>
+                  </div>
+                  <button type="button" class="add_to_cart text-uppercase">add to cart</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <a href="#" class="d-block text-center mb-4">
+              <div class="product-list">
+                <div class="product-image position-relative">
+                  <span class="sale">sale</span>
+                  <img src="/projects/2nd-e-comerce-website/img/images/p6.jpg" alt="product" class="img-fluid product-image-first">
+                  <img src="/projects/2nd-e-comerce-website/img/images/p8.jpg" alt="product" class="img-fluid product-image-secondary">
+                </div>
+                <div class="product-name pt-3">
+                  <h3 class="text-capitalize">
+                    elegant formal party dress
+                  </h3>
+                  <p class="mb-0 amount">$500.00<del>$980.00</del></p>
+                  <div class="py-1">
+                    <span class="bi bi-star-fill text-danger"></span>
+                    <span class="bi bi-star-fill text-danger"></span>
+                    <span class="bi bi-star-fill text-danger"></span>
+                    <span class="bi bi-star-half text-danger"></span>
+                    <span class="bi bi-star text-danger"></span>
+                  </div>
+                  <button type="button" class="add_to_cart text-uppercase">add to cart</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <a href="#" class="d-block text-center mb-4">
+              <div class="product-list">
+                <div class="product-image position-relative">
+                  <span class="sale">sale</span>
+                  <img src="/projects/2nd-e-comerce-website/img/images/p9.jpg" alt="product" class="img-fluid product-image-first">
+                  <img src="/projects/2nd-e-comerce-website/img/images/p10.jpg" alt="product" class="img-fluid product-image-secondary">
+                </div>
+                <div class="product-name pt-3">
+                  <h3 class="text-capitalize">
+                    mini dress ladies sleeves
+                  </h3>
+                  <p class="mb-0 amount">$200.00</p>
+                  <div class="py-1">
+                    <span class="bi bi-star-fill text-danger"></span>
+                    <span class="bi bi-star-fill text-danger"></span>
+                    <span class="bi bi-star-fill text-danger"></span>
+                    <span class="bi bi-star-half text-danger"></span>
+                    <span class="bi bi-star text-danger"></span>
+                  </div>
+                  <button type="button" class="add_to_cart text-uppercase">add to cart</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <a href="#" class="d-block text-center mb-4">
+              <div class="product-list">
+                <div class="product-image position-relative">
+                  <span class="sale">sale</span>
+                  <img src="/projects/2nd-e-comerce-website/img/images/p2.jpg" alt="product" class="img-fluid product-image-first">
+                  <img src="/projects/2nd-e-comerce-website/img/images/p5.jpg" alt="product" class="img-fluid product-image-secondary">
+                </div>
+                <div class="product-name pt-3">
+                  <h3 class="text-capitalize">
+                    winter long sleeve black white
+                  </h3>
+                  <p class="mb-0 amount">$400.00<del>$780.00</del></p>
+                  <div class="py-1">
+                    <span class="bi bi-star-fill text-danger"></span>
+                    <span class="bi bi-star-fill text-danger"></span>
+                    <span class="bi bi-star-fill text-danger"></span>
+                    <span class="bi bi-star-half text-danger"></span>
+                    <span class="bi bi-star text-danger"></span>
+                  </div>
+                  <button type="button" class="add_to_cart text-uppercase">add to cart</button>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+
+
+        <!-- ------up to 75%off --------->
+        <div class="overflow-hidden my-5">
+          <div class="row">
+            <div class="col-sm-12 up_to_off">
+              <img src="/projects/2nd-e-comerce-website/img/images/lg.jpg" alt="lg" class="img-fluid w-100">
+              <div class="up_to_content">
+                <h2 class="text-uppercase">up to 75% springsale!</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------special section--------------------- -->
+    <section id="special" class="special" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000" >
+     <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="headline text-center mb-5">
+            <h2 class="pb-3 position-relative d-inline-block text-uppercase">summer sale</h2>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-7 text-center text-lg-start">
+          <div class="countdown-container">
+            <h2 class="text-uppercase">sexy floral embroidery</h2>
+            <p class="my-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia laudantium quis voluptate sint reiciendis! Saepe cumque facilis amet architecto beatae, molestiae voluptates ratione similique. Repellendus harum pariatur sed consectetur facere?</p>
+            <ul class="list-unstyled countdown-counter">
+              <li><span class="fs-1 d-block" id="days">00</span>days</li>
+              <li><span class="fs-1 d-block" id="hour">00</span>hr</li>
+              <li><span class="fs-1 d-block" id="min">00</span>min</li>
+              <li><span class="fs-1 d-block" id="sec">00</span>sec</li>
+            </ul>
+            <span class="countdown-price h3 d-block mb-4">$420 <del>$670</del></span>
+            <button type="button" class="btn btn-danger text-uppercase">add to cart</button>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-5">
+          <div class="special-img position-relative">
+            <span class="sale text-uppercase">sale</span>
+            <img src="/projects/2nd-e-comerce-website/img/images/p7.jpg" alt="sale" class="img-fluid">
+          </div>
+        </div>
+      </div>
+     </div>
+    </section>
+
+    <!-- -----------------testmonial section -------------------->
+    <section id="testimonial" class="testimonial" data-aos="fade-down" data-aos-duration="2500">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="headline text-center mb-5">
+              <h2 class="pb-3 position-relative d-inline-block text-uppercase">testimonial</h2>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-8 offset-lg-2 text-center">
+            <div id="carouselExampleIndicatorstwo" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorstwo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="testimonial-wrapper">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <img src="/projects/2nd-e-comerce-website/img/images/user.png" alt=" user" class="img-fluid">
+                      </div>
+                      <div class="username">
+                        <h3>martin johe, co-founder /CEO</h3>
+                        <span>fastcompany ltd.</span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt illum numquam est impedit quaerat, possimus sed esse nobis laboriosam voluptatum cum iusto libero assumenda totam architecto ducimus et fugiat maxime.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-wrapper">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <img src="/projects/2nd-e-comerce-website/img/images/user2.png" alt=" user" class="img-fluid">
+                      </div>
+                      <div class="username">
+                        <h3>martin johe, co-founder /CEO</h3>
+                        <span>fastcompany ltd.</span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt illum numquam est impedit quaerat, possimus sed esse nobis laboriosam voluptatum cum iusto libero assumenda totam architecto ducimus et fugiat maxime.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorstwo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true">
+                  <span class="bi bi-arrow-left text-danger fs-2 w-50"></span>
+                </span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorstwo" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true">
+                  <span class="bi bi-arrow-right text-danger fs-2 w-50"></span>
+                </span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -----------------contact section-------------- -->
+    <section id="contact" data-aos="flip-down" data-aos-duration="2500">
+      <div class="contact">
+        <div class="container">
+          <div class="mb-5 text-center">
+            <h5>let start a conversation</h5>
+            <h2 class="fw-bold">contact us</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-5 col-md-5">
+              <h4 class="fw-bold">info</h4>
+              <ul class="info list-unstyled">
+                <li class="d-flex align-items-center">
+                  <span class="pe-3 bi bi-geo-alt-fill fs-5"></span>
+                  <p><a href="">Lorem ipsum dolor sit amet consectetur adipisicing.</a></p>
+                </li>
+                <li class="d-flex align-items-center">
+                  <span class="pe-3 bi bi-phone-fill fs-5"></span>
+                  <p><a href="">+91 999-999-9999</a></p>
+                </li>
+                <li class="d-flex align-items-center">
+                  <span class="pe-3 bi bi-envelope-fill fs-5"></span>
+                  <p><a href="">info@eshop.in</a></p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-7 col-md-7 pt-lg-0 pt-md-0 pt-4">
+              <form>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="name" id="name" placeholder="your name">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="email address">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea name="message" id="message" cols="30" rows="4" class="textarea" placeholder="enter your message"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <button class="btn btn-danger"><span class="bi bi-rocket pe-2 fs-5"></span>Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---footer section -->
+<footer class="p-3 copyright">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-6 p-1 p-lg-3 text-center text-lg-start">
+        <p class="my-0">copyright &copy; 2023 <a href="">E-SHOP</a> all right are reserved
+        </p>
+      </div>
+      <div class="col-12 col-lg-6 p-1 p-lg-3 text-center text-lg-end">
+        <p>designed by<a href="#" target="_blank"> rohit lathiyan.</a> 
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- scroll back to top -->
+<div id="scrollup" title="scroll to top">
+  <a href="#home"><span class="bi bi-arrow-up fs-4 text-white"></span></a>
+</div>
+
+
+
+
+
+    <!-------js cdn link ----------->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+
+    <!------------------ own js ------------------------>
+    <script src="/projects/2nd-e-comerce-website/main.js"></script>
+
+    <!-----------------animation js----------------- -------- -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
